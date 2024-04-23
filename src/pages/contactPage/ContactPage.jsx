@@ -3,7 +3,7 @@ import "./contactPage.css";
 
 export const ContactPage = () => {
   return (
-    <MainLayout>
+    <MainLayout className="contact-page">
       <section className="hero">
         <div className="hero-content">
           <h1>Contact Us</h1>

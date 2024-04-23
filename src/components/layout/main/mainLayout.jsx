@@ -1,8 +1,8 @@
 import "./mainLayout.css"
 
-export const MainLayout = ({children}) => {
+export const MainLayout = ({children, className}) => {
     return (
-        <main>
+        <main  className={`${className}`}>
             {children}
         </main>
     )

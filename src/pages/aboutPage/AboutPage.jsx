@@ -3,7 +3,7 @@ import "./aboutPage.css"
 
 export const AboutPage = () => {
   return (
-    <MainLayout>
+    <MainLayout className="about-page"> 
       <section className="hero">
       <div className="hero-content">
       <h1>Welcome to Our AboutPage</h1>

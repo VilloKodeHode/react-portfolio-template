@@ -5,7 +5,7 @@ import ProjectCard from "../../components/projectCard/ProjectCard";
 
 export const IndexPage = () => {
   return (
-    <MainLayout>
+    <MainLayout className="index-page">
     <section className="hero">
       <div className="hero-content">
         <h1>Welcome to Our Website</h1>
