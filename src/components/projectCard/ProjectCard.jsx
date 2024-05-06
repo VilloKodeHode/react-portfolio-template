@@ -2,6 +2,7 @@ import './projectCard.css';
 
 const ProjectCard = ({ title, description, imageUrl }) => {
   return (
+    <>
     <div className="project-card">
       <img src={imageUrl} alt={title} className="project-image" />
       <div className="project-details">
@@ -9,6 +10,7 @@ const ProjectCard = ({ title, description, imageUrl }) => {
         <p className="project-description">{description}</p>
       </div>
     </div>
+    </>
   );
 };
 

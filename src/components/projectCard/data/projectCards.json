@@ -28,6 +28,12 @@
       "title": "Project 5",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, libero eu mattis ultricies, nisl libero euismod magna, vel luctus dui neque ac nunc.",
       "imageUrl": "https://via.placeholder.com/300"
+    },
+    {
+      "id": 6,
+      "title": "Project 6",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, libero eu mattis ultricies, nisl libero euismod magna, vel luctus dui neque ac nunc.",
+      "imageUrl": "https://via.placeholder.com/300"
     }
   ]
   

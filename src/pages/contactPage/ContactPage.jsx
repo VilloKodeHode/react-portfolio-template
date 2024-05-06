@@ -1,14 +1,14 @@
-import { MainLayout } from "../../components/layout/main/mainLayout";
 import "./contactPage.css";
 
 export const ContactPage = () => {
   return (
-    <MainLayout className="contact-page">
+    <>
       <section className="hero">
         <div className="hero-content">
           <h1>Contact Us</h1>
           <p>
-            Have questions or feedback? Feel free to reach out to us using the form below or through our contact information.
+            Have questions or feedback? Feel free to reach out to us using the
+            form below or through our contact information.
           </p>
         </div>
       </section>
@@ -28,9 +28,11 @@ export const ContactPage = () => {
             <label htmlFor="message">Your Message</label>
             <textarea id="message" name="message" required></textarea>
           </div>
-          <button type="submit" className="btn">Send Message</button>
+          <button type="submit" className="btn">
+            Send Message
+          </button>
         </form>
       </section>
-    </MainLayout>
+    </>
   );
 };
