@@ -6,6 +6,7 @@ export const NormalButton = ({children, href, className = ""}) => {
   );
 };
 
+{/* <a href="#footer" className="btn">Learn more</a> */}
 
 export const SecondaryButton = ({children, href}) => {
   return (

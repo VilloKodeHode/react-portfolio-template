@@ -12,6 +12,8 @@ function App() {
     <>
       <Router>
         <Header />
+
+{/*  change the className so it is dynamic with the current page. Otherwise put a className and style that works for all pages */}
         <MainLayout className="index-page">
           <Routes>
             <Route path="/" element={<IndexPage />} />
@@ -19,6 +21,7 @@ function App() {
             <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </MainLayout>
+
         <Footer />
       </Router>
     </>
