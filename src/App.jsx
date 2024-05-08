@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {Routes, Route, useLocation } from "react-router-dom";
 import "./App.css";
 import { Header } from "./components/layout/header/Header";
 import { Footer } from "./components/layout/footer/Footer";
@@ -8,22 +8,23 @@ import { AboutPage } from "./pages/aboutPage/AboutPage";
 import { MainLayout } from "./components/layout/main/mainLayout";
 
 function App() {
+const location = useLocation()
+const {pathname} = location
+const currentPage = pathname.slice(1)
   return (
     <>
-      <Router>
+    {/* Router has been moved to main.jsx. Meaning it wraps around the whole App component */}
         <Header />
 
-{/*  change the className so it is dynamic with the current page. Otherwise put a className and style that works for all pages */}
-        <MainLayout className="index-page">
+
+        <MainLayout className={`${currentPage? currentPage : "index"}-page`}>
           <Routes>
             <Route path="/" element={<IndexPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </MainLayout>
-
         <Footer />
-      </Router>
     </>
   );
 }
